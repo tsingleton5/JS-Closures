@@ -39,7 +39,9 @@ var callFriend = function() {
 
 //Code Here
 function makeCall() {
-  return console.log(callFriend);
+  return function () {
+    console.log(callFriend);
+  }
 }
 
 
@@ -226,9 +228,3 @@ var funcArray = [zero, one, two, three, four, five];
   funcArray[5]() //5
 
   // *Hint: Don't let this fool you. Break down what's really happening here.
-
-
-
-
-
-//did makeCall is right?
