@@ -38,13 +38,8 @@ var callFriend = function() {
 // Create a makeCall function that when invoked logs  'Calling Jake at 435-215-9248' in your console.
 
 //Code Here
-function makeCall() {
-  return function () {
-    console.log(callFriend);
-  }
-}
-
-
+var makeCall = callFriend(435-215-9248);
+// console.log(makeCall);
 
 
 
@@ -184,7 +179,6 @@ timeOutCounter();
 
 
 
-
 //////////////////PROBLEM 8////////////////////
 
 var funcArray = [];
@@ -214,7 +208,7 @@ function five () {
   return 5;
 }
 
-var funcArray = [zero, one, two, three, four, five];
+funcArray = [zero, one, two, three, four, five];
 
 
 
